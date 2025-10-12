@@ -57,12 +57,26 @@
                     </div>
                     <div id="mobile-action-buttons">
                          <button id="mobile-auto-detect-btn" class="icon-btn" title="Auto Detect Pose"></button>
+                         <button id="mobile-show-skeleton-btn" class="icon-btn" title="Show/Hide Skeleton"></button>
+                         <button id="mobile-show-mesh-btn" class="icon-btn active" title="Show/Hide Mesh"></button>
                          <button id="mobile-reset-view-btn" class="icon-btn" title="Reset View"></button>
                          <button id="mobile-rig-btn" class="primary-btn icon-btn" title="Generate Rig" disabled></button>
                     </div>
                 </div>
                 <div class="button-group desktop-only">
                     <button id="auto-detect-btn">Auto Detect Pose</button>
+                    <div class="options-group editor-options">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="editor-skeleton-toggle">
+                            <span class="slider"></span>
+                            Show Skeleton
+                        </label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="editor-mesh-toggle" checked>
+                            <span class="slider"></span>
+                            Show Mesh
+                        </label>
+                    </div>
                     <button id="reset-view-btn">Reset View</button>
                     <button id="rig-btn" class="primary-btn" disabled>Generate Rig</button>
                 </div>

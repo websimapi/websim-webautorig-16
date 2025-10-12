@@ -37,7 +37,9 @@ export class App {
         this.editorControls = new EditorControls({
             onRig: () => this.handleRigging(),
             onResetView: () => this.editorViewer?.resetControls(),
-            onAutoDetect: () => this.handleAutoDetect()
+            onAutoDetect: () => this.handleAutoDetect(),
+            onSkeletonToggle: (visible) => this.editorViewer?.toggleSkeleton(visible),
+            onMeshToggle: (visible) => this.editorViewer?.toggleMesh(visible),
         });
 
         this.previewControls = new PreviewControls({
